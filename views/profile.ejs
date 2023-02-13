@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <link rel="stylesheet" href="/stylesheets/profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="main_r">
+            <div class="colore1"></div>
+            <div class="colore2"></div>
+            <div class="main_box_right">
+               <h1 class="h12">Hello <%= user%> 👋</h1>
+               <h2 class="h11">Reset Password</h2>
+               <form class="f_r" action="/reset" method="post">
+                    <input class="r1" type="password" name="oldpassword" placeholder="Old Password" />
+                    <input class="r1" type="password" name="password" placeholder="New Password" />
+                    <button class="btn1">Reset Password</button>
+                </form>
+                <a href="/logout"><button class="btn2">Logout</button></a>
+            </div>
+        </div>
+    </body>
+</html>
